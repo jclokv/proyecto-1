@@ -1,43 +1,82 @@
 body {
   background-color: rgb(204, 126, 126);
-  border: 1px solid black;
-  height: 800px;
+  height:100%;
 }
 .encabezado {
-  border: 1px solid black;
   text-align: center;
 }
 div {
-  margin: 10px;
   display: flex;
   justify-content: center;
-  gap: 70px;
 }
 
 .imagen {
-  border: 1px solid black;
   height: 300px;
 }
-.articulos {
-  border: 1px solid black;
-  height: 100px;
+.artic {
   display: flex;
-  align-items: center;
-  
+  gap: 20px;
+  padding: 20px;
+  justify-content: space-between;
+}
+.artic .rec {
+  height: 20px;
+  width: 100px;
 }
 
-.articulos .cuadrado1 {
+.ejemplos {
+  
+  display: flex;
+  gap: 20px;
+}
+
+.footer {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+}
+.padre {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+.padre:hover{
+  opacity: 50%;
+  scale: 1.1;
+  transition: 300ms;
+}
+
+.conteiner {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+
+}
+.rec {
   border: 1px solid black;
-  height: 50px;
-  width: 80px;
 }
-.articulos .cuadrado2 {
-  border: 1px solid red;
-  height: 50px;
-  width: 80px;
+.padre .rec:first-child {
+  height: 150px;
 }
-.articulos .cuadrado3 {
-  border: 1px solid rgb(214, 180, 180);
-  height: 50px;
-  width: 80px;
+.padre .rec:nth-child(2) {
+  height: 30px;
 }
+.cta{
+  width: 300px;
+  height: 100px;
+}
+
+.contenedor{
+  display: flex;
+  flex-direction: column;
+  padding: 20px ;
+  gap: 20px;
+  
+} 
+.cta{
+  margin: 0 auto;
+  
+} 
