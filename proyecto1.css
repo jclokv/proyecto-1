@@ -1,6 +1,6 @@
 body {
   background-color: rgb(204, 126, 126);
-  height:100%;
+  height: 100%;
 }
 .encabezado {
   text-align: center;
@@ -25,24 +25,17 @@ div {
 }
 
 .ejemplos {
-  
   display: flex;
   gap: 20px;
 }
 
-.footer {
-  height: 120px;
-  display: flex;
-  flex-direction: column;
-}
 .padre {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 20px;
-
 }
-.padre:hover{
+.padre:hover {
   opacity: 50%;
   scale: 1.1;
   transition: 300ms;
@@ -52,8 +45,6 @@ div {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  
-
 }
 .rec {
   border: 1px solid black;
@@ -64,19 +55,55 @@ div {
 .padre .rec:nth-child(2) {
   height: 30px;
 }
-.cta{
+.cta {
   width: 300px;
   height: 100px;
 }
 
-.contenedor{
+.contenedor {
   display: flex;
   flex-direction: column;
-  padding: 20px ;
+  padding: 20px;
   gap: 20px;
-  
-} 
-.cta{
+}
+.cta {
   margin: 0 auto;
-  
-} 
+}
+
+.sub .rec {
+  height: 80px;
+  width: 120px;
+}
+.sub2 {
+  height: 40px;
+  width: 150px;
+}
+
+.contenido {
+  padding: 20px;
+}
+
+.sub {
+  gap: 20px;
+  justify-content: right;
+}
+.esquinatop {
+  justify-content: left;
+}
+
+.esquinabot .rec:first-child {
+  height: 30px;
+  width: 80px;
+}
+.esquinabot .rec:nth-child(2) {
+  height: 30px;
+  width: 80px;
+
+}
+.esquinabot{
+  justify-content: left;
+  position: absolute;
+  bottom: 270px;
+  gap: 30px;
+
+}
